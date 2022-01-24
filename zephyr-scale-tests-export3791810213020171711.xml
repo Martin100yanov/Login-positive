@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>13200</projectId>
+    <projectKey>SWT1419</projectKey>
+    <modelVersion>1.0</modelVersion>
+    <jiraVersion>8.13.6</jiraVersion>
+    <exportDate>2022-01-24 15:58:33 UTC</exportDate>
+    <folders>
+        <folder fullPath="[TG-5]" index="4"/>
+        <folder fullPath="[TG-5]/[Martin Stoyanov]" index="1"/>
+        <folder fullPath="[TG-5]/[Martin Stoyanov]/Logout positive" index="1"/>
+        <folder fullPath="[TG-5]/[Martin Stoyanov]/Logout positive/SWT1419-T2" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="16722" key="SWT1419-T28">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Мартин Стоянов</createdBy>
+            <createdOn>2021-09-23 22:10:38 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[[TG-5]/[Martin Stoyanov]/Logout positive/SWT1419-T2]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Login positive]]></name>
+            <objective><![CDATA[The objective of this test case is to validate the following acceptance criteria from the user story http://jira.softacad.bg/projects/SWT1419/issues/SWT1419-1?filter=allopenissues:<br/>2. The user shall be able to select the login option from the menu<br/>4.2. If the provided username and / or password are wrong, the user shall be notified by the application that the credentials are wrong. The user shall not be able to login into the application ]]></objective>
+            <owner>JIRAUSER14101</owner>
+            <precondition><![CDATA[The client use the wrong username and credentials.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Navigate to the application URL.]]></description>
+                        <expectedResult><![CDATA[The polling application is loaded in the browser.]]></expectedResult>
+                        <testData><![CDATA[http://jira.softacad.bg/projects/SWT1419/issues/SWT1419-1?filter=allopenissues]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click the right top on the login button.]]></description>
+                        <expectedResult><![CDATA[Loaded the login page in the browser.<br/><br/>]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Type test data in Username or Email.]]></description>
+                        <expectedResult><![CDATA[The test data is entered into the input field.]]></expectedResult>
+                        <testData><![CDATA[<em>wrongUser1</em>]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[use the wrong password.]]></description>
+                        <expectedResult><![CDATA[The test data is entered into the input field and is masked.]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Click Login button.]]></description>
+                        <expectedResult><![CDATA[The user shall not be able to login into the application.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Мартин Стоянов</updatedBy>
+            <updatedOn>2021-09-24 19:11:06 UTC</updatedOn>
+        </testCase>
+    </testCases>
+</project>
